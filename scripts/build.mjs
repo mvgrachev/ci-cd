@@ -27,7 +27,7 @@ for (const entry of sourceFiles) {
 
 await writeFile(
   path.join(distDir, "build-info.js"),
-  `built_at_utc=${new Date().toISOString()}\n`,
+  `built_at_utc="${new Date().toISOString()}"\n`,
   "utf8"
 );
 
